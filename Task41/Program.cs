@@ -6,7 +6,7 @@ int[] CreateArrayIntUser(int size)
 {
     int[] arr = new int[size];
     Console.WriteLine($"Введите {size} чисел:");
-    for(int i=0; i<size; i++)
+    for (int i = 0; i < size; i++)
     {
         arr[i] = Convert.ToInt32(Console.ReadLine());
     }
@@ -16,9 +16,9 @@ int[] CreateArrayIntUser(int size)
 int CountPositiveElements(int[] arr)
 {
     int countPositiveElements = 0;
-    for(int i=0; i<arr.Length; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
-        if(arr[i]>0) countPositiveElements++;
+        if (arr[i] > 0) countPositiveElements++;
     }
     return countPositiveElements;
 }
